@@ -4,7 +4,6 @@ public class Controller {
 
     private Model model;
     private Scanner scanner;
-
     private boolean running = true;
 
     public Controller() {
@@ -38,11 +37,11 @@ public class Controller {
         }
     }
 
-    public void setRunning(boolean running) {
+    private void setRunning(boolean running) {
         this.running = running;
     }
 
-    public Input getInput() {
+    private Input getInput() {
         if (scanner.hasNext()) {
             String s = scanner.nextLine();
             if (s.length() != 5) {
